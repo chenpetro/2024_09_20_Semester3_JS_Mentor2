@@ -1,0 +1,47 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 0, 0, 0.766),rgba(255, 166, 0, 0.706));
+}
+.click{
+    font-size: 70px;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+#counter{
+    font-size: 70px;
+    color: black;
+    text-align: center;
+}
+.activeBtn{
+    animation: tranformBtn 20s infinite ease-in-out;
+}
+
+@keyframes tranformBtn{
+    0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translate(-300px,-300px);
+    }
+    40%{
+        transform: translate(500px,-300px);
+    }
+    60%{
+        transform: translate(500px,50px);
+    }
+    80%{
+        transform: translate(-300px,50px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
